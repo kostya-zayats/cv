@@ -1,0 +1,54 @@
+section {
+  margin-bottom: 4rem;
+}
+
+.section-content {
+  margin: 0 auto;
+  padding: 4rem;
+  max-width: 100rem;
+  width: 100%;
+  background-color: $section-bg;
+  box-shadow: 0 .2rem .5rem 0 rgba(0,0,0,0.15), 0 .2rem 1rem 0 rgba(0,0,0,0.11);
+}
+
+.dark-theme {
+
+  section {
+    position: relative;
+    background:
+            radial-gradient($section-dots-gradient .2rem, transparent 0) 0 0,
+            radial-gradient($section-dots-gradient, transparent 0) 0 0;
+    background-size: 8rem 8rem;
+
+    &:before, &:after {
+      content: "";
+      width: 100%;
+      height: .2rem;
+      position: absolute;
+      left: 0;
+      background-color: $section-dots-gradient;
+    }
+
+    &:before {
+      top: 0;
+    }
+
+    &:after {
+      bottom: 0;
+    }
+  }
+
+  .section-content {
+    background:
+            linear-gradient(90deg, $active-color .2rem, transparent 0) 0 0,
+            linear-gradient(90deg, $active-color .2rem, transparent 0) 0 100%,
+            linear-gradient(270deg, $active-color .2rem, transparent 0) 100% 0,
+            linear-gradient(270deg, $active-color .2rem, transparent 0) 100% 100%,
+            linear-gradient(180deg, $active-color .2rem, transparent 0) 0 0,
+            linear-gradient(180deg, $active-color .2rem, transparent 0) 100% 0,
+            linear-gradient(0deg, $active-color .2rem, transparent 0) 0 100%,
+            linear-gradient(0deg, $active-color .2rem, transparent 0) 100% 100%;
+    background-size: 2.8rem 2.8rem;
+    background-repeat: no-repeat;
+  }
+}

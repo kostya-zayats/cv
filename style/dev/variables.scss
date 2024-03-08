@@ -1,10 +1,15 @@
 $active-color: var(--active-color);
 
+// Containers
 $main-bg: var(--main-bg);
 $section-bg: var(--section-bg);
 
+// Text
 $text-main: var(--text-main);
 $text-light: var(--text-light);
+
+// Gradients
+$section-dots-gradient: var(--section-dots-gradient);
 
 :root {
   --active-color: #0487CC;
@@ -12,13 +17,14 @@ $text-light: var(--text-light);
   --section-bg: #fff;
   --text-main: #000;
   --text-light: #757575;
+  --section-dots-gradient: transparent; // do not exists in default theme
 }
 
 .dark-theme {
   --active-color: #FCEE0A;
   --main-bg: #000;
-  --section-bg: rgba(255, 255, 255, .5);
-  //--section-bg: transparent;
+  --section-bg: transparent;
   --text-main: #fff;
   --text-light: #757575;
+  --section-dots-gradient: rgba(252, 238, 10, .3);
 }
