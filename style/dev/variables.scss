@@ -1,7 +1,24 @@
-$active-color: #0487cc;
+$active-color: var(--active-color);
 
-$main-bg: rgb(239, 239, 239);
-$section-bg: #fff;
+$main-bg: var(--main-bg);
+$section-bg: var(--section-bg);
 
-$text-main: #000;
-$text-light: #757575;
+$text-main: var(--text-main);
+$text-light: var(--text-light);
+
+:root {
+  --active-color: #0487CC;
+  --main-bg: rgb(239, 239, 239);
+  --section-bg: #fff;
+  --text-main: #000;
+  --text-light: #757575;
+}
+
+.dark-theme {
+  --active-color: #FCEE0A;
+  --main-bg: #000;
+  --section-bg: rgba(255, 255, 255, .5);
+  //--section-bg: transparent;
+  --text-main: #fff;
+  --text-light: #757575;
+}

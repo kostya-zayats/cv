@@ -1,5 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+:root {
+  --active-color: #0487CC;
+  --main-bg: rgb(239, 239, 239);
+  --section-bg: #fff;
+  --text-main: #000;
+  --text-light: #757575; }
+
+.dark-theme {
+  --active-color: #FCEE0A;
+  --main-bg: #000;
+  --section-bg: rgba(255, 255, 255, .5);
+  --text-main: #fff;
+  --text-light: #757575; }
+
 article,
 aside,
 details,
@@ -459,7 +473,7 @@ table {
 html, body {
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 10px;
-  color: #000;
+  color: var(--text-main);
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -468,7 +482,7 @@ html, body {
 .main-container {
   width: 100%;
   height: 100%;
-  background-color: #efefef;
+  background-color: var(--main-bg);
   position: relative;
   overflow: auto; }
 
@@ -482,7 +496,7 @@ html, body {
 
 section {
   padding: 4rem;
-  background-color: #fff;
+  background-color: var(--section-bg);
   box-shadow: 0 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.15), 0 0.2rem 1rem 0 rgba(0, 0, 0, 0.11);
   margin-bottom: 4rem; }
 
@@ -490,14 +504,14 @@ section {
 /* Headers */
 h2 {
   font-family: 'Oswald', sans-serif;
-  color: #0487cc;
+  color: var(--active-color);
   text-transform: uppercase;
   font-size: 4rem;
   line-height: 4.4rem;
   font-weight: 400;
   margin-bottom: 5.6rem; }
   h2 span {
-    color: #000; }
+    color: var(--text-main); }
 
 h3 {
   font-size: 2rem;
@@ -511,16 +525,26 @@ p {
   line-height: 2.8rem; }
 
 /* End Paragraph */
+.theme-switcher {
+  font-size: 1.4rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 1000; }
+
+.dark-theme .animated-bg {
+  display: none; }
+
 .animated-bg {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #efefef; }
+  background-color: var(--main-bg); }
 
 .animated-bg-header {
-  background-color: #0487cc; }
+  background-color: var(--active-color); }
 
 .animated-bg-header-unit {
   height: 20vh;
