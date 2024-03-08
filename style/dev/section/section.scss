@@ -9,6 +9,15 @@ section {
   width: 100%;
   background-color: $section-bg;
   box-shadow: 0 .2rem .5rem 0 rgba(0,0,0,0.15), 0 .2rem 1rem 0 rgba(0,0,0,0.11);
+
+  h2 {
+    text-align: left;
+    margin-bottom: .4rem;
+  }
+
+  h3 {
+    margin-bottom: 2rem;
+  }
 }
 
 .dark-theme {

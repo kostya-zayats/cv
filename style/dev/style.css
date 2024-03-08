@@ -3,7 +3,7 @@
 :root {
   --active-color: #0487CC;
   --main-bg: rgb(239, 239, 239);
-  --section-bg: #fff;
+  --section-bg: #FFF;
   --text-main: #000;
   --text-light: #757575;
   --section-dots-gradient: transparent; }
@@ -12,7 +12,7 @@
   --active-color: #FCEE0A;
   --main-bg: #000;
   --section-bg: transparent;
-  --text-main: #fff;
+  --text-main: #FFF;
   --text-light: #757575;
   --section-dots-gradient: rgba(252, 238, 10, .3); }
 
@@ -498,6 +498,7 @@ html, body {
 /* End Containers */
 /* Headers */
 h2 {
+  text-align: center;
   font-family: 'Oswald', sans-serif;
   color: var(--active-color);
   text-transform: uppercase;
@@ -520,6 +521,9 @@ p {
   line-height: 2.8rem; }
 
 /* End Paragraph */
+.text-leght {
+  color: var(--text-light); }
+
 .theme-switcher {
   font-size: 1.4rem;
   position: absolute;
@@ -594,6 +598,11 @@ section {
   width: 100%;
   background-color: var(--section-bg);
   box-shadow: 0 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.15), 0 0.2rem 1rem 0 rgba(0, 0, 0, 0.11); }
+  .section-content h2 {
+    text-align: left;
+    margin-bottom: .4rem; }
+  .section-content h3 {
+    margin-bottom: 2rem; }
 
 .dark-theme section {
   position: relative;

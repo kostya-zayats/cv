@@ -14,7 +14,7 @@ $section-dots-gradient: var(--section-dots-gradient);
 :root {
   --active-color: #0487CC;
   --main-bg: rgb(239, 239, 239);
-  --section-bg: #fff;
+  --section-bg: #FFF;
   --text-main: #000;
   --text-light: #757575;
   --section-dots-gradient: transparent; // do not exists in default theme
@@ -24,7 +24,7 @@ $section-dots-gradient: var(--section-dots-gradient);
   --active-color: #FCEE0A;
   --main-bg: #000;
   --section-bg: transparent;
-  --text-main: #fff;
+  --text-main: #FFF;
   --text-light: #757575;
   --section-dots-gradient: rgba(252, 238, 10, .3);
 }
