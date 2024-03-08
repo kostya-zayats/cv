@@ -29,6 +29,10 @@ html, body {
   margin: 0 auto;
   position: relative;
   z-index: 5;
+
+  @include mobile900 {
+    padding: 8rem 2rem 5rem;
+  }
 }
 
 /* End Containers */

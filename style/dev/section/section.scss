@@ -9,7 +9,7 @@ section {
   display: flex;
   gap: 3rem;
 
-  @include mobile900{
+  @include mobile900 {
     flex-direction: column;
   }
 
@@ -28,6 +28,10 @@ section {
   background-color: $section-bg;
   box-shadow: 0 .2rem .5rem 0 rgba(0,0,0,0.15), 0 .2rem 1rem 0 rgba(0,0,0,0.11);
   flex-grow: 1;
+
+  @include mobile900 {
+    padding: 4rem 2rem;
+  }
 }
 
 .dark-theme {
